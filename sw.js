@@ -1,4 +1,4 @@
-const CACHE_NAME = 'fx991cw-pwa-v2';
+const CACHE_NAME = 'fx991cw-pwa-v3';
 const ASSETS = [
   './',
   './index.html',

@@ -161,35 +161,38 @@
     .calc-chassis {
       width: 368px;
       height: 754px;
-      border-radius: 26px 26px 34px 34px;
-      padding: 18px 34px 24px 34px;
+      border-radius: 30px 30px 36px 36px;
+      padding: 16px 34px 24px 34px;
       position: relative;
       display: flex;
       flex-direction: column;
-      background: linear-gradient(165deg, #EDD3D7 0%, #E5C4C9 48%, #DAB3BA 100%);
+      background: linear-gradient(170deg, #EED0D6 0%, #E7C3CA 48%, #DEB6BE 100%);
       box-shadow:
-        0 20px 44px rgba(48, 28, 35, 0.25),
-        0 4px 10px rgba(48, 28, 35, 0.14),
-        inset 0 2px 3px rgba(255, 255, 255, 0.75),
-        inset 0 -4px 8px rgba(135, 92, 102, 0.35);
-      border: 1.5px solid #CFA5AD;
-      --legend-shift: #5B3F8D;
-      --key-num-bg: linear-gradient(180deg, #FFFFFF 0%, #F4EFF1 100%);
-      --key-num-border: #D2C3C7;
-      --key-num-shadow: 0 2px 0 #BEAAB0, 0 3px 5px rgba(40, 20, 25, 0.15);
-      --key-num-fg: #2A2528;
-      --key-top-bg: linear-gradient(180deg, #F8EFF1 0%, #EBD9DD 100%);
-      --key-top-border: #CBB0B6;
-      --key-top-shadow: 0 2px 0 #B6979E, 0 3px 4px rgba(40, 20, 25, 0.14);
-      --key-top-fg: #2C2428;
-      --key-sci-bg: linear-gradient(180deg, #FAF3F5 0%, #EFE1E4 100%);
-      --key-del-bg: linear-gradient(180deg, #524B50 0%, #3A3438 100%);
-      --key-del-fg: #FFFFFF;
-      --key-exe-bg: linear-gradient(180deg, #FFFFFF 0%, #F1E8EC 100%);
-      --groove-fill: #DDB6BD;
-      --groove-stroke: #C69BA4;
-      --logo-fg: #342B2E;
-      --classwiz-fg: #4B3E43;
+        0 20px 44px rgba(48, 28, 35, 0.24),
+        0 4px 10px rgba(48, 28, 35, 0.12),
+        inset 0 2px 3px rgba(255, 255, 255, 0.72),
+        inset 0 -3px 7px rgba(135, 92, 102, 0.30);
+      border: 1.5px solid #C9A0A8;
+      --legend-shift: #6E4B9E;
+      --key-num-bg: linear-gradient(180deg, #FFFFFF 0%, #F4F2F3 100%);
+      --key-num-border: #C8B5BA;
+      --key-num-shadow: 0 2px 0 #B59DA3, 0 3px 5px rgba(40, 20, 25, 0.14);
+      --key-num-fg: #342D30;
+      --key-pink-bg: linear-gradient(180deg, #F1D3D9 0%, #E5C0C7 100%);
+      --key-pink-border: #C39CA4;
+      --key-pink-shadow: 0 2px 0 #B08891, 0 3px 4px rgba(40, 20, 25, 0.14);
+      --key-pink-fg: #9B7880;
+      --key-top-bg: linear-gradient(180deg, #FFFFFF 0%, #F4F2F3 100%);
+      --key-top-border: #C8B5BA;
+      --key-top-shadow: 0 2px 0 #B59DA3, 0 3px 4px rgba(40, 20, 25, 0.14);
+      --key-top-fg: #342D30;
+      --key-sci-bg: linear-gradient(180deg, #FFFFFF 0%, #F4F2F3 100%);
+      --key-exe-bg: linear-gradient(180deg, #FFFFFF 0%, #F4F2F3 100%);
+      --groove-fill: #DFBBC2;
+      --groove-stroke: #CAA3AB;
+      --logo-fg: #4D4346;
+      --classwiz-fg: #4D4346;
+      --del-tag: #3B3336;
     }
 
     .calc-chassis.bk {
@@ -205,31 +208,36 @@
       --key-num-border: #23262B;
       --key-num-shadow: 0 2px 0 #16181C, 0 3px 5px rgba(0, 0, 0, 0.42);
       --key-num-fg: #F3F5F8;
-      --key-top-bg: linear-gradient(180deg, #3C4048 0%, #2D3138 100%);
+      --key-pink-bg: linear-gradient(180deg, #3A3E46 0%, #2B2F36 100%);
+      --key-pink-border: #1B1D22;
+      --key-pink-shadow: 0 2px 0 #121418, 0 3px 4px rgba(0, 0, 0, 0.42);
+      --key-pink-fg: #C5CBD4;
+      --key-top-bg: linear-gradient(180deg, #424750 0%, #31353D 100%);
       --key-top-border: #1D2025;
       --key-top-shadow: 0 2px 0 #131519, 0 3px 4px rgba(0, 0, 0, 0.42);
       --key-top-fg: #ECEFF4;
-      --key-sci-bg: linear-gradient(180deg, #3D414A 0%, #2E3239 100%);
-      --key-del-bg: linear-gradient(180deg, #5B616D 0%, #444953 100%);
-      --key-del-fg: #FFFFFF;
+      --key-sci-bg: linear-gradient(180deg, #424750 0%, #31353D 100%);
       --key-exe-bg: linear-gradient(180deg, #4B515C 0%, #383D46 100%);
       --groove-fill: #15171B;
       --groove-stroke: #0D0E11;
       --logo-fg: #E9ECEF;
       --classwiz-fg: #AEB5C0;
+      --del-tag: #181B20;
     }
 
-    /* Decorative subtle side bevel */
+    /* Decorative subtle dual-step perimeter rim groove & top/bottom tabs */
     .calc-chassis::before {
       content: "";
       position: absolute;
-      inset: 6px;
-      border-radius: 21px 21px 29px 29px;
-      border: 1px solid rgba(255, 255, 255, 0.25);
+      inset: 7px;
+      border-radius: 23px 23px 29px 29px;
+      border: 1.5px solid rgba(165, 124, 133, 0.48);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.48);
       pointer-events: none;
     }
     .calc-chassis.bk::before {
-      border-color: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.08);
+      box-shadow: none;
     }
 
     /* Inner 300px Master Grid */
@@ -242,67 +250,65 @@
       z-index: 2;
     }
 
-    /* Header row: CASIO + fx-991CW + Solar */
+    /* Header row: CASIO + fx-991CW + Large Dark Solar Panel */
     .calc-header {
       width: 300px;
-      height: 36px;
+      height: 48px;
       padding: 0 5px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
     .brand-left {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 1px;
+      gap: 3px;
     }
     .solar-panel {
-      width: 82px;
-      height: 24px;
-      border-radius: 5px;
-      background: linear-gradient(180deg, #382527 0%, #241819 100%);
-      border: 1.5px solid rgba(0, 0, 0, 0.35);
-      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.65), 0 1px 0 rgba(255, 255, 255, 0.3);
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1px;
-      padding: 2px;
+      width: 128px;
+      height: 44px;
+      border-radius: 7px;
+      background: linear-gradient(165deg, #2B1F20 0%, #1F1617 65%, #160F10 100%);
+      border: 1.5px solid rgba(145, 110, 118, 0.55);
+      box-shadow:
+        inset 0 2px 4px rgba(0, 0, 0, 0.65),
+        0 1px 0 rgba(255, 255, 255, 0.45);
       overflow: hidden;
     }
-    .solar-cell {
-      background: linear-gradient(145deg, #4B3033 0%, #2C1B1D 100%);
-      border-radius: 1px;
-    }
     .calc-chassis.bk .solar-panel {
-      background: linear-gradient(180deg, #272228 0%, #181419 100%);
-      box-shadow: inset 0 1px 3px rgba(0,0,0,0.8), 0 1px 0 rgba(255,255,255,0.12);
+      background: linear-gradient(180deg, #272228 0%, #161317 100%);
+      border-color: rgba(255, 255, 255, 0.1);
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.85), 0 1px 0 rgba(255,255,255,0.08);
     }
 
-    /* LCD Bezel & 4-Level Grayscale Dot-Matrix Screen */
+    /* LCD Recessed Frame & Mint-White Dot-Matrix Screen */
     .lcd-bezel {
       width: 290px;
       margin: 0 5px;
-      padding: 7px 8px;
-      border-radius: 10px;
-      background: linear-gradient(180deg, #2A2D2F 0%, #1D2022 100%);
+      padding: 2px;
+      border-radius: 9px;
+      background: linear-gradient(180deg, #C7A4AC 0%, #DFC0C6 100%);
+      border: 1.5px solid #8F7D81;
       box-shadow:
-        inset 0 2px 4px rgba(0, 0, 0, 0.65),
-        0 1px 0 rgba(255, 255, 255, 0.38);
+        inset 0 2px 3px rgba(60, 40, 45, 0.28),
+        0 1px 0 rgba(255, 255, 255, 0.55);
     }
     .calc-chassis.bk .lcd-bezel {
+      background: #1B1D22;
+      border-color: #0E1013;
       box-shadow:
         inset 0 2px 4px rgba(0, 0, 0, 0.85),
         0 1px 0 rgba(255, 255, 255, 0.08);
     }
     .lcd-screen {
       width: 100%;
-      height: 122px;
-      border-radius: 4px;
-      background: linear-gradient(180deg, #C7D3C1 0%, #BDCAB7 100%);
-      box-shadow: inset 0 1px 4px rgba(32, 42, 34, 0.35);
-      color: #1B221D;
+      height: 112px;
+      border-radius: 6px;
+      background: linear-gradient(180deg, #DCECE4 0%, #D5E7DE 100%);
+      box-shadow: inset 0 1px 3px rgba(25, 40, 32, 0.22);
+      color: #141916;
       display: flex;
       flex-direction: column;
       overflow: hidden;
@@ -527,18 +533,18 @@
       border: 1px solid transparent;
     }
     .home-item.selected {
-      background: #1B221D;
-      color: #C7D3C1;
+      background: #141916;
+      color: #DCECE4;
     }
     .home-item-icon {
-      width: 22px;
+      width: 38px;
       height: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
     .home-item-label {
-      font-size: 9.5px;
+      font-size: 10.5px;
       font-weight: 700;
       line-height: 1.1;
       margin-top: 1px;
@@ -692,44 +698,59 @@
 
     /* Round small keys (ON, HOME, SETTINGS, BACK, SHIFT, VAR, FUNC, CAT, TOOLS) */
     .ckey-round {
-      width: 36px;
-      height: 36px;
+      width: 35px;
+      height: 35px;
       border-radius: 50%;
       transform: translate(-50%, -50%);
     }
     .ckey-round:active, .ckey-round.is-pressed {
       transform: translate(-50%, calc(-50% + 1.5px));
     }
+    .ckey-pink {
+      background: var(--key-pink-bg);
+      border-color: var(--key-pink-border);
+      color: var(--key-pink-fg);
+      box-shadow: var(--key-pink-shadow);
+    }
+    .ckey-on {
+      width: 24px;
+      height: 24px;
+    }
 
     .ckey-shift {
-      background: linear-gradient(180deg, #9C79CC 0%, #6D4EA6 100%);
-      border-color: #553B87;
-      color: #fff;
-      box-shadow: 0 2px 0 #483075, 0 3px 5px rgba(45, 25, 80, 0.25);
+      background: linear-gradient(180deg, #9F74CA 0%, #8357B0 100%);
+      border-color: #6B4296;
+      color: #C4A8E6;
+      box-shadow: 0 2px 0 #5C3782, 0 3px 5px rgba(45, 25, 80, 0.25);
     }
     .ckey-shift.shift-active {
       box-shadow: 0 0 0 2px #fff, 0 0 10px rgba(109, 78, 166, 0.9);
+      color: #fff;
     }
 
-    /* D-Pad 5-button cluster */
+    /* D-Pad 5-button cluster (Pink hardware caps) */
     .ckey-dpad {
       width: 38px;
       height: 34px;
       border-radius: 17px;
       transform: translate(-50%, -50%);
+      background: var(--key-pink-bg);
+      border-color: var(--key-pink-border);
+      color: var(--key-pink-fg);
+      box-shadow: var(--key-pink-shadow);
     }
     .ckey-dpad:active, .ckey-dpad.is-pressed {
       transform: translate(-50%, calc(-50% + 1.5px));
     }
     .ckey-dpad-ok {
-      width: 38px;
-      height: 38px;
+      width: 37px;
+      height: 37px;
       border-radius: 50%;
-      font-size: 11.5px;
+      font-size: 13px;
       font-weight: 800;
     }
     .ckey-dpad-down {
-      width: 36px;
+      width: 35px;
       height: 54px;
       border-radius: 18px;
       transform: translate(-50%, -32%);
@@ -740,18 +761,18 @@
       transform: translate(-50%, calc(-32% + 1.5px));
     }
 
-    /* Vertical Page Rocker « / » */
+    /* Vertical Page Rocker « / » (Pink seamless pill) */
     .rocker-pill {
       position: absolute;
       left: 275px;
-      top: 45px;
-      width: 32px;
-      height: 76px;
+      top: 46px;
+      width: 33px;
+      height: 78px;
       transform: translate(-50%, -50%);
-      border-radius: 16px;
-      border: 1px solid var(--key-top-border);
-      background: var(--key-top-bg);
-      box-shadow: var(--key-top-shadow);
+      border-radius: 17px;
+      border: 1px solid var(--key-pink-border);
+      background: var(--key-pink-bg);
+      box-shadow: var(--key-pink-shadow);
       display: flex;
       flex-direction: column;
       overflow: hidden;
@@ -760,30 +781,29 @@
       flex: 1;
       border: none;
       background: transparent;
-      color: var(--key-top-fg);
+      color: var(--key-pink-fg);
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 0;
     }
-    .rocker-half:first-child {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-    }
     .rocker-half:active, .rocker-half.is-pressed {
-      background: rgba(0, 0, 0, 0.08);
+      background: rgba(0, 0, 0, 0.06);
     }
     .rocker-half.guide-pulse {
       outline: 2.5px solid #ff2d75;
       z-index: 15;
     }
 
-    /* Scientific Rows 4 & 5 (6-col rounded pills) */
+    /* Scientific Rows 4 & 5 (6-col white oval pills) */
     .ckey-sci {
       width: 41px;
-      height: 29px;
-      border-radius: 14.5px;
+      height: 28px;
+      border-radius: 999px;
       background: var(--key-sci-bg);
+      border-color: var(--key-num-border);
+      box-shadow: var(--key-num-shadow);
       transform: translate(-50%, -50%);
     }
     .ckey-sci:active, .ckey-sci.is-pressed {
@@ -810,7 +830,7 @@
       display: flex;
       flex-direction: column;
       gap: 15px;
-      margin-top: 10px;
+      margin-top: 8px;
     }
     .lower-row {
       display: grid;
@@ -841,36 +861,22 @@
     .ckey-num {
       position: relative;
       width: 48px;
-      height: 35px;
-      border-radius: 10px;
+      height: 36px;
+      border-radius: 999px;
       background: var(--key-num-bg);
       border: 1px solid var(--key-num-border);
       color: var(--key-num-fg);
       box-shadow: var(--key-num-shadow);
-      font-size: 16px;
-      font-weight: 700;
+      font-size: 18px;
+      font-weight: 600;
     }
     .ckey-num:active, .ckey-num.is-pressed {
       transform: translateY(1.5px);
       box-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.3);
     }
-    .ckey-del {
-      background: var(--key-del-bg);
-      border-color: #292428;
-      color: var(--key-del-fg);
-      clip-path: polygon(16% 0%, 100% 0%, 100% 100%, 16% 100%, 0% 50%);
-      border-radius: 0 8px 8px 0;
-      padding-left: 5px;
-    }
-    .ckey-ac {
-      background: linear-gradient(180deg, #9C79CC 0%, #6D4EA6 100%);
-      border-color: #553B87;
-      color: #FFFFFF;
-      box-shadow: 0 2px 0 #483075, 0 3px 5px rgba(45, 25, 80, 0.25);
-    }
     .ckey-exe {
       background: var(--key-exe-bg);
-      font-weight: 800;
+      font-weight: 700;
     }
 
     /* ============================================================
@@ -1104,19 +1110,14 @@
             <!-- Header: CASIO + fx-991CW + Solar Panel -->
             <div class="calc-header">
               <div class="brand-left">
-                <svg width="86" height="15" viewBox="0 0 86 15" aria-label="CASIO">
-                  <text x="0" y="13" fill="var(--logo-fg)" font-family="Arial, sans-serif" font-weight="900" font-size="14" letter-spacing="1.4">CASIO</text>
+                <svg width="94" height="17" viewBox="0 0 94 17" aria-label="CASIO">
+                  <text x="0" y="14.5" fill="var(--logo-fg)" font-family="Arial, sans-serif" font-weight="900" font-size="16" letter-spacing="1.8">CASIO</text>
                 </svg>
-                <svg width="96" height="13" viewBox="0 0 96 13" aria-label="fx-991CW">
-                  <text x="0" y="10" fill="var(--classwiz-fg)" font-family="Arial, sans-serif" font-weight="700" font-style="italic" font-size="10.5" letter-spacing="0.4">fx-991CW</text>
+                <svg width="96" height="14" viewBox="0 0 96 14" aria-label="fx-991CW">
+                  <text x="0" y="11" fill="var(--classwiz-fg)" font-family="Arial, sans-serif" font-weight="700" font-size="11.5" letter-spacing="0.4">fx-991CW</text>
                 </svg>
               </div>
-              <div class="solar-panel" title="Solar Power Panel">
-                <div class="solar-cell"></div>
-                <div class="solar-cell"></div>
-                <div class="solar-cell"></div>
-                <div class="solar-cell"></div>
-              </div>
+              <div class="solar-panel" title="Solar Power Panel"></div>
             </div>
 
             <!-- LCD Bezel + Screen -->
@@ -1140,8 +1141,8 @@
 
             <!-- CLASSWIZ Logo -->
             <div class="classwiz-row">
-              <svg width="78" height="12" viewBox="0 0 78 12" aria-label="CLASSWIZ">
-                <text x="78" y="9.5" text-anchor="end" fill="var(--classwiz-fg)" font-family="Arial, sans-serif" font-weight="800" font-size="9.2" letter-spacing="1.1">CLASSWIZ</text>
+              <svg width="92" height="13" viewBox="0 0 92 13" aria-label="CLASSWIZ">
+                <text x="92" y="10.5" text-anchor="end" fill="var(--classwiz-fg)" font-family="Arial, sans-serif" font-weight="600" font-size="9.5" letter-spacing="2.4">CLASSWIZ</text>
               </svg>
             </div>
 
@@ -1151,14 +1152,13 @@
               <svg class="groove-svg" viewBox="0 0 300 242">
                 <!-- Seamless recessed cross groove centered at (175, 58) with elongated bottom arm -->
                 <path d="M153,16 Q153,4 165,4 L185,4 Q197,4 197,16 L197,36 L232,36 Q248,36 248,52 L248,64 Q248,80 232,80 L197,80 L197,121 Q197,134 185,134 L165,134 Q153,134 153,121 L153,80 L118,80 Q102,80 102,64 L102,52 Q102,36 118,36 L153,36 Z"
-                  fill="var(--groove-fill)" stroke="var(--groove-stroke)" stroke-width="1"/>
-                <!-- Subtle inner highlight -->
+                  fill="var(--groove-fill)" stroke="var(--groove-stroke)" stroke-width="0.9"/>
                 <path d="M104,54 Q104,38 118,38 L155,38 L155,16 Q155,6 165,6 L185,6 Q195,6 195,16 L195,38 L232,38 Q246,38 246,54"
-                  fill="none" stroke="rgba(0,0,0,0.12)" stroke-width="1"/>
+                  fill="none" stroke="rgba(0,0,0,0.08)" stroke-width="0.9"/>
 
                 <!-- Labels above Rows 1-2 & 3 -->
-                <text x="25" y="4" text-anchor="middle" fill="var(--logo-fg)" font-size="8.2" font-weight="800">ON</text>
-                <text x="75" y="4" text-anchor="middle" fill="var(--logo-fg)" font-size="7.5" font-weight="800">HOME</text>
+                <text x="25" y="7" text-anchor="middle" fill="var(--logo-fg)" font-size="8.2" font-weight="800">ON</text>
+                <text x="75" y="4" text-anchor="middle" fill="var(--logo-fg)" font-size="7.6" font-weight="800">HOME</text>
                 <text x="25" y="48" text-anchor="middle" fill="var(--logo-fg)" font-size="6.8" font-weight="800">SETTINGS</text>
                 <text x="75" y="48" text-anchor="middle" fill="var(--logo-fg)" font-size="7.2" font-weight="800">BACK</text>
 
@@ -1168,209 +1168,220 @@
                 <text x="225" y="94" text-anchor="middle" fill="var(--logo-fg)" font-size="6.8" font-weight="800">CATALOG</text>
                 <text x="275" y="94" text-anchor="middle" fill="var(--logo-fg)" font-size="7.2" font-weight="800">TOOLS</text>
 
-                <!-- Purple SHIFT legends with └ bracket lines above Row 4 (cy=160, top=145.5) -->
+                <!-- Purple SHIFT legends with └ bracket lines above Row 4 (cy=160, top=146) -->
                 <!-- Col 1: x (QR) -->
                 <g fill="var(--legend-shift)" stroke="var(--legend-shift)">
-                  <polyline points="14,137 14,143 19,143" fill="none" stroke-width="1.4" stroke-linecap="round"/>
-                  <text x="26" y="142" stroke="none" text-anchor="middle" font-size="9.5" font-weight="900">QR</text>
+                  <polyline points="12,138 12,144 17,144" fill="none" stroke-width="1.3" stroke-linecap="round"/>
+                  <text x="23" y="142" stroke="none" text-anchor="middle" font-size="9.5" font-weight="900">QR</text>
                 </g>
-                <!-- Col 2: frac (mixed frac) -->
+                <!-- Col 2: frac (mixed frac: ■ ■/□) -->
                 <g fill="var(--legend-shift)" stroke="var(--legend-shift)">
-                  <polyline points="61,137 61,143 66,143" fill="none" stroke-width="1.4" stroke-linecap="round"/>
-                  <rect x="69" y="135.5" width="4.5" height="6" fill="none" stroke-width="1.2"/>
-                  <rect x="77" y="132.5" width="4" height="4" fill="none" stroke-width="1.1"/>
-                  <line x1="76" y1="138" x2="82" y2="138" stroke-width="1.2"/>
-                  <rect x="77" y="139.5" width="4" height="4" fill="none" stroke-width="1.1"/>
+                  <polyline points="59,138 59,144 64,144" fill="none" stroke-width="1.3" stroke-linecap="round"/>
+                  <rect x="67" y="135.5" width="4.5" height="6" stroke="none"/>
+                  <rect x="74" y="132.5" width="4" height="4" stroke="none"/>
+                  <line x1="73" y1="138" x2="79" y2="138" stroke-width="1.2"/>
+                  <rect x="74" y="139.5" width="4" height="4" fill="none" stroke-width="1.1"/>
                 </g>
-                <!-- Col 3: sqrt (3-root) -->
+                <!-- Col 3: sqrt (^■√□) -->
                 <g fill="var(--legend-shift)" stroke="var(--legend-shift)">
-                  <polyline points="111,137 111,143 116,143" fill="none" stroke-width="1.4" stroke-linecap="round"/>
-                  <text x="121" y="138" stroke="none" font-size="7.5" font-weight="900">3</text>
-                  <polyline points="122,140 124,142.5 127,134 134,134" fill="none" stroke-width="1.3" stroke-linecap="round"/>
+                  <polyline points="109,138 109,144 114,144" fill="none" stroke-width="1.3" stroke-linecap="round"/>
+                  <rect x="115.5" y="133" width="4" height="4" stroke="none"/>
+                  <polyline points="119,139.5 121,142.5 124,134 133,134" fill="none" stroke-width="1.3" stroke-linecap="round"/>
+                  <rect x="126.5" y="136.2" width="4.5" height="4.5" fill="none" stroke-width="1.1"/>
                 </g>
-                <!-- Col 4: x^2 (x^-1) -->
+                <!-- Col 4: ■^□ (■^-1) -->
                 <g fill="var(--legend-shift)" stroke="var(--legend-shift)">
-                  <polyline points="161,137 161,143 166,143" fill="none" stroke-width="1.4" stroke-linecap="round"/>
-                  <text x="176" y="142" stroke="none" text-anchor="middle" font-size="9.5" font-weight="900">x<tspan dy="-3" font-size="7">−1</tspan></text>
+                  <polyline points="159,138 159,144 164,144" fill="none" stroke-width="1.3" stroke-linecap="round"/>
+                  <rect x="167" y="136" width="5.5" height="6" stroke="none"/>
+                  <text x="178" y="137" stroke="none" text-anchor="middle" font-size="7.5" font-weight="900">−1</text>
                 </g>
-                <!-- Col 5: x^n (n-root) -->
+                <!-- Col 5: ■^2 (log) -->
                 <g fill="var(--legend-shift)" stroke="var(--legend-shift)">
-                  <polyline points="211,137 211,143 216,143" fill="none" stroke-width="1.4" stroke-linecap="round"/>
-                  <rect x="218" y="133" width="4" height="4" fill="none" stroke-width="1.1"/>
-                  <polyline points="222,140 224,142.5 227,134 234,134" fill="none" stroke-width="1.3" stroke-linecap="round"/>
+                  <polyline points="209,138 209,144 214,144" fill="none" stroke-width="1.3" stroke-linecap="round"/>
+                  <text x="223" y="142" stroke="none" text-anchor="middle" font-size="9.5" font-weight="900">log</text>
                 </g>
-                <!-- Col 6: log (10^n) -->
+                <!-- Col 6: log_■□ (ln) -->
                 <g fill="var(--legend-shift)" stroke="var(--legend-shift)">
-                  <polyline points="260,137 260,143 265,143" fill="none" stroke-width="1.4" stroke-linecap="round"/>
-                  <text x="276" y="142" stroke="none" text-anchor="middle" font-size="9.2" font-weight="900">10<tspan dy="-3" font-size="7">■</tspan></text>
+                  <polyline points="259,138 259,144 264,144" fill="none" stroke-width="1.3" stroke-linecap="round"/>
+                  <text x="272" y="142" stroke="none" text-anchor="middle" font-size="9.5" font-weight="900">ln</text>
                 </g>
 
-                <!-- Purple SHIFT legends with └ bracket lines above Row 5 (cy=204, top=189.5) -->
-                <!-- Col 1: Ans (=) -->
-                <g fill="var(--legend-shift)" stroke="var(--legend-shift)">
-                  <polyline points="14,181 14,187 19,187" fill="none" stroke-width="1.4" stroke-linecap="round"/>
-                  <text x="27" y="186.5" stroke="none" text-anchor="middle" font-size="11" font-weight="900">=</text>
-                </g>
+                <!-- Purple SHIFT legends with └ bracket lines above Row 5 (cy=204, top=190) -->
+                <!-- Col 1: Ans (no SHIFT legend on real fx-991CW) -->
                 <!-- Col 2: sin (sin^-1) -->
                 <g fill="var(--legend-shift)" stroke="var(--legend-shift)">
-                  <polyline points="57,181 57,187 62,187" fill="none" stroke-width="1.3" stroke-linecap="round"/>
-                  <text x="77" y="186" stroke="none" text-anchor="middle" font-size="9.5" font-weight="900">sin<tspan dy="-3" font-size="6.8">−1</tspan></text>
+                  <polyline points="56,182 56,188 61,188" fill="none" stroke-width="1.3" stroke-linecap="round"/>
+                  <text x="74" y="186" stroke="none" text-anchor="middle" font-size="9.5" font-weight="900">sin<tspan dy="-3" font-size="6.8">−1</tspan></text>
                 </g>
                 <!-- Col 3: cos (cos^-1) -->
                 <g fill="var(--legend-shift)" stroke="var(--legend-shift)">
-                  <polyline points="107,181 107,187 112,187" fill="none" stroke-width="1.3" stroke-linecap="round"/>
-                  <text x="128" y="186" stroke="none" text-anchor="middle" font-size="9.5" font-weight="900">cos<tspan dy="-3" font-size="6.8">−1</tspan></text>
+                  <polyline points="106,182 106,188 111,188" fill="none" stroke-width="1.3" stroke-linecap="round"/>
+                  <text x="125" y="186" stroke="none" text-anchor="middle" font-size="9.5" font-weight="900">cos<tspan dy="-3" font-size="6.8">−1</tspan></text>
                 </g>
                 <!-- Col 4: tan (tan^-1) -->
                 <g fill="var(--legend-shift)" stroke="var(--legend-shift)">
-                  <polyline points="157,181 157,187 162,187" fill="none" stroke-width="1.3" stroke-linecap="round"/>
-                  <text x="178" y="186" stroke="none" text-anchor="middle" font-size="9.5" font-weight="900">tan<tspan dy="-3" font-size="6.8">−1</tspan></text>
+                  <polyline points="156,182 156,188 161,188" fill="none" stroke-width="1.3" stroke-linecap="round"/>
+                  <text x="175" y="186" stroke="none" text-anchor="middle" font-size="9.5" font-weight="900">tan<tspan dy="-3" font-size="6.8">−1</tspan></text>
                 </g>
-                <!-- Col 5: ( (ln) -->
+                <!-- Col 5: ( (=) -->
                 <g fill="var(--legend-shift)" stroke="var(--legend-shift)">
-                  <polyline points="212,181 212,187 217,187" fill="none" stroke-width="1.4" stroke-linecap="round"/>
-                  <text x="227" y="186" stroke="none" text-anchor="middle" font-size="9.5" font-weight="900">ln</text>
+                  <polyline points="209,182 209,188 214,188" fill="none" stroke-width="1.3" stroke-linecap="round"/>
+                  <text x="221" y="186.5" stroke="none" text-anchor="middle" font-size="11.5" font-weight="900">=</text>
                 </g>
-                <!-- Col 6: ) (e^n) -->
+                <!-- Col 6: ) (,) -->
                 <g fill="var(--legend-shift)" stroke="var(--legend-shift)">
-                  <polyline points="262,181 262,187 267,187" fill="none" stroke-width="1.4" stroke-linecap="round"/>
-                  <text x="277" y="186" stroke="none" text-anchor="middle" font-size="9.5" font-weight="900">e<tspan dy="-3" font-size="7">■</tspan></text>
+                  <polyline points="259,182 259,188 264,188" fill="none" stroke-width="1.3" stroke-linecap="round"/>
+                  <text x="268" y="185" stroke="none" text-anchor="middle" font-size="12" font-weight="900">,</text>
                 </g>
               </svg>
 
-              <!-- Row 1 Keys -->
-              <button class="ckey ckey-round" data-key="ON" style="left:25px;top:24px" aria-label="ON">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
-                  <path d="M12 3v8M6.5 6.8a8 8 0 1 0 11 0"/>
+              <!-- Row 1 Keys (Pink hardware caps) -->
+              <button class="ckey ckey-round ckey-pink ckey-on" data-key="ON" style="left:25px;top:25px" aria-label="ON">
+                <svg width="10" height="10" viewBox="0 0 12 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                  <line x1="6" y1="0.5" x2="6" y2="5.5"/>
                 </svg>
               </button>
-              <button class="ckey ckey-round" data-key="HOME" style="left:75px;top:24px" aria-label="HOME">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round">
-                  <path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>
+              <button class="ckey ckey-round ckey-pink" data-key="HOME" style="left:75px;top:24px" aria-label="HOME">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+                  <path d="M4 11.5L12 4.5l8 7V19a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19z"/>
                 </svg>
               </button>
 
-              <!-- D-Pad (5 buttons inside cross groove centered at 175,58) -->
+              <!-- D-Pad (5 pink buttons inside cross groove centered at 175,58) -->
               <button class="ckey ckey-dpad" data-key="UP" style="left:175px;top:22px" aria-label="Up">
-                <svg width="12" height="10" viewBox="0 0 12 10"><path d="M6 1L11 8H1Z" fill="currentColor"/></svg>
+                <svg width="13" height="10" viewBox="0 0 14 10" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 7.5L7 2.5L11 7.5"/>
+                </svg>
               </button>
               <button class="ckey ckey-dpad" data-key="LEFT" style="left:125px;top:58px" aria-label="Left">
-                <svg width="10" height="12" viewBox="0 0 10 12"><path d="M1 6L8 1V11Z" fill="currentColor"/></svg>
+                <svg width="10" height="13" viewBox="0 0 10 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7.5 3L2.5 7L7.5 11"/>
+                </svg>
               </button>
               <button class="ckey ckey-dpad ckey-dpad-ok" data-key="OK" style="left:175px;top:58px" aria-label="OK">OK</button>
               <button class="ckey ckey-dpad" data-key="RIGHT" style="left:225px;top:58px" aria-label="Right">
-                <svg width="10" height="12" viewBox="0 0 10 12"><path d="M9 6L2 1V11Z" fill="currentColor"/></svg>
+                <svg width="10" height="13" viewBox="0 0 10 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2.5 3L7.5 7L2.5 11"/>
+                </svg>
               </button>
               <button class="ckey ckey-dpad ckey-dpad-down" data-key="DOWN" style="left:175px;top:94px" aria-label="Down">
-                <svg width="12" height="10" viewBox="0 0 12 10" style="margin-top:4px"><path d="M6 9L1 2H11Z" fill="currentColor"/></svg>
+                <svg width="13" height="10" viewBox="0 0 14 10" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="margin-top:4px">
+                  <path d="M3 2.5L7 7.5L11 2.5"/>
+                </svg>
               </button>
 
-              <!-- Vertical Page Rocker « / » -->
+              <!-- Vertical Page Rocker « / » (Pink pill with double-chevrons) -->
               <div class="rocker-pill">
                 <button class="rocker-half" data-key="PGUP" aria-label="Page Up">
-                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7L6 3L10 7"/></svg>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 6.5L7 2.8L11 6.5"/><path d="M3 10.5L7 6.8L11 10.5"/>
+                  </svg>
                 </button>
                 <button class="rocker-half" data-key="PGDN" aria-label="Page Down">
-                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3L6 7L10 3"/></svg>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 3.5L7 7.2L11 3.5"/><path d="M3 7.5L7 11.2L11 7.5"/>
+                  </svg>
                 </button>
               </div>
 
-              <!-- Row 2 Keys -->
-              <button class="ckey ckey-round" data-key="SETTINGS" style="left:25px;top:68px" aria-label="SETTINGS">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="3"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4l1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4m11.4-11.4l1.4-1.4"/>
+              <!-- Row 2 Keys (Pink hardware caps, SETTINGS 3-sliders & BACK U-turn arrow) -->
+              <button class="ckey ckey-round ckey-pink" data-key="SETTINGS" style="left:25px;top:68px" aria-label="SETTINGS">
+                <svg width="17" height="15" viewBox="0 0 20 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+                  <line x1="2" y1="4" x2="18" y2="4"/><line x1="7" y1="2" x2="7" y2="6"/>
+                  <line x1="2" y1="9" x2="18" y2="9"/><line x1="13" y1="7" x2="13" y2="11"/>
+                  <line x1="2" y1="14" x2="18" y2="14"/><line x1="9" y1="12" x2="9" y2="16"/>
                 </svg>
               </button>
-              <button class="ckey ckey-round" data-key="BACK" style="left:75px;top:68px" aria-label="BACK">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M9 14L4 9l5-5"/><path d="M4 9h10a5 5 0 0 1 0 10h-3"/>
+              <button class="ckey ckey-round ckey-pink" data-key="BACK" style="left:75px;top:68px" aria-label="BACK">
+                <svg width="17" height="16" viewBox="0 0 24 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 5L4.5 9L9 13"/><path d="M5 9h9.5a4.5 4.5 0 0 1 0 9H8"/>
                 </svg>
               </button>
 
-              <!-- Row 3 Control Keys (No blank button — elongated Down sits at cx=175) -->
+              <!-- Row 3 Control Keys (Purple SHIFT + White caps) -->
               <button class="ckey ckey-round ckey-shift" id="key-SHIFT" data-key="SHIFT" style="left:25px;top:114px" aria-label="SHIFT">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round">
-                  <path d="M12 3l8 8h-5v9H9v-9H4z"/>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 3l7.5 8h-4.5v9h-6v-9H4.5z"/>
                 </svg>
               </button>
               <button class="ckey ckey-round" data-key="VARIABLE" style="left:75px;top:114px" aria-label="VARIABLE">
-                <svg width="20" height="14" viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.6">
-                  <path d="M2 5h7M6 2l3 3-3 3M9 11H2m3-3l-3 3 3 3"/>
-                  <rect x="12" y="2" width="10" height="12" rx="2"/>
-                  <text x="17" y="11" stroke="none" fill="currentColor" font-size="9" font-weight="800" font-style="italic" text-anchor="middle">x</text>
+                <svg width="20" height="14" viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M2 5h7M6 2.5L8.5 5 6 7.5M9 11H2M5 8.5L2.5 11 5 13.5"/>
+                  <rect x="11.5" y="2" width="10.5" height="12" rx="1.5"/>
+                  <text x="16.7" y="11" stroke="none" fill="currentColor" font-size="9.5" font-weight="800" font-style="italic" text-anchor="middle">x</text>
                 </svg>
               </button>
               <button class="ckey ckey-round" data-key="FUNCTION" style="left:125px;top:114px" aria-label="FUNCTION">
-                <svg width="22" height="14" viewBox="0 0 24 14">
-                  <text x="12" y="10.5" fill="currentColor" font-size="10.5" font-style="italic" font-weight="800" text-anchor="middle">f(x)</text>
+                <svg width="24" height="15" viewBox="0 0 26 16">
+                  <text x="13" y="12" fill="currentColor" font-size="11.5" font-style="italic" font-weight="700" text-anchor="middle">f(x)</text>
                 </svg>
               </button>
               <button class="ckey ckey-round" data-key="CATALOG" style="left:225px;top:114px" aria-label="CATALOG">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M4 5h6a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4z"/><path d="M20 5h-6a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h6z"/>
+                <svg width="17" height="16" viewBox="0 0 24 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round">
+                  <path d="M3 5l9 2.5L21 5v12l-9 2.5L3 17z"/><line x1="12" y1="7.5" x2="12" y2="19.5"/>
                 </svg>
               </button>
               <button class="ckey ckey-round" data-key="TOOLS" style="left:275px;top:114px" aria-label="TOOLS">
-                <svg width="22" height="12" viewBox="0 0 24 12" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <circle cx="5" cy="6" r="2.2"/><circle cx="12" cy="6" r="2.2"/><circle cx="19" cy="6" r="2.2"/>
+                <svg width="22" height="12" viewBox="0 0 24 12" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <circle cx="5.5" cy="6" r="2"/><circle cx="12" cy="6" r="2"/><circle cx="18.5" cy="6" r="2"/>
                 </svg>
               </button>
 
-              <!-- Row 4 Scientific Keys (cy=160) -->
+              <!-- Row 4 Scientific Keys (cy=160): x, ■/□, √■, ■^□, ■^2, log_■□ -->
               <button class="ckey ckey-sci" data-key="XVAR" style="left:25px;top:160px" aria-label="x">
-                <svg width="18" height="14" viewBox="0 0 18 14"><text x="9" y="11" fill="currentColor" font-size="13" font-style="italic" font-weight="800" text-anchor="middle">x</text></svg>
+                <svg width="18" height="14" viewBox="0 0 18 14"><text x="9" y="11" fill="currentColor" font-family="Georgia, serif" font-size="14" font-style="italic" font-weight="700" text-anchor="middle">x</text></svg>
               </button>
               <button class="ckey ckey-sci" data-key="FRAC" style="left:75px;top:160px" aria-label="Fraction">
                 <svg width="20" height="20" viewBox="0 0 20 20" stroke="currentColor" fill="none">
-                  <rect x="7" y="2" width="6" height="5.5" fill="currentColor" stroke-width="1"/>
+                  <rect x="6.8" y="2.2" width="6.4" height="5.5" fill="currentColor" stroke="none"/>
                   <line x1="4" y1="10" x2="16" y2="10" stroke-width="1.6"/>
-                  <rect x="7" y="12.5" width="6" height="5.5" stroke-width="1.4"/>
+                  <rect x="6.8" y="12.3" width="6.4" height="5.5" stroke-width="1.4"/>
                 </svg>
               </button>
               <button class="ckey ckey-sci" data-key="SQRT" style="left:125px;top:160px" aria-label="Square Root">
                 <svg width="22" height="18" viewBox="0 0 22 18" stroke="currentColor" fill="none">
                   <polyline points="3,11 6,15 10,4 19,4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                  <rect x="11.5" y="7" width="6" height="6.5" stroke-width="1.3"/>
+                  <rect x="11.5" y="7" width="6.2" height="6.5" fill="currentColor" stroke="none"/>
                 </svg>
               </button>
-              <button class="ckey ckey-sci" data-key="SQ" style="left:175px;top:160px" aria-label="x squared">
-                <svg width="22" height="18" viewBox="0 0 22 18">
-                  <text x="8" y="14" fill="currentColor" font-size="12.5" font-style="italic" font-weight="800">x</text>
-                  <text x="14.5" y="8" fill="currentColor" font-size="8.5" font-weight="800">2</text>
-                </svg>
-              </button>
-              <button class="ckey ckey-sci" data-key="POW" style="left:225px;top:160px" aria-label="Power">
+              <button class="ckey ckey-sci" data-key="POW" style="left:175px;top:160px" aria-label="Power">
                 <svg width="22" height="18" viewBox="0 0 22 18" stroke="currentColor" fill="none">
-                  <text x="6.5" y="14.5" stroke="none" fill="currentColor" font-size="12.5" font-style="italic" font-weight="800">x</text>
-                  <rect x="13" y="3" width="5.5" height="5.5" stroke-width="1.3"/>
+                  <rect x="4.5" y="7.5" width="7" height="7" fill="currentColor" stroke="none"/>
+                  <rect x="13" y="3" width="5.2" height="5.2" stroke-width="1.3"/>
+                </svg>
+              </button>
+              <button class="ckey ckey-sci" data-key="SQ" style="left:225px;top:160px" aria-label="Squared">
+                <svg width="22" height="18" viewBox="0 0 22 18">
+                  <rect x="5" y="7.5" width="7" height="7" fill="currentColor"/>
+                  <text x="15.5" y="9" fill="currentColor" font-size="9" font-weight="800" text-anchor="middle">2</text>
                 </svg>
               </button>
               <button class="ckey ckey-sci" data-key="LOG" style="left:275px;top:160px" aria-label="Logarithm">
                 <svg width="32" height="18" viewBox="0 0 32 18" stroke="currentColor" fill="none">
-                  <text x="2" y="13" stroke="none" fill="currentColor" font-size="9.5" font-weight="800">log</text>
-                  <rect x="16.5" y="9" width="4.5" height="4.5" fill="currentColor" stroke-width="1"/>
-                  <rect x="22.5" y="4.5" width="5.5" height="6.5" stroke-width="1.2"/>
+                  <text x="2.5" y="13" stroke="none" fill="currentColor" font-size="10.5" font-weight="800">log</text>
+                  <rect x="19" y="9.2" width="4.2" height="4.8" fill="currentColor" stroke="none"/>
+                  <rect x="24.5" y="5" width="4.8" height="7.5" stroke-width="1.2"/>
                 </svg>
               </button>
 
-              <!-- Row 5 Scientific Keys (cy=204) -->
+              <!-- Row 5 Scientific Keys (cy=204): Ans, sin, cos, tan, (, ) -->
               <button class="ckey ckey-sci" data-key="ANS" style="left:25px;top:204px" aria-label="Ans">
-                <svg width="26" height="16" viewBox="0 0 26 16"><text x="13" y="12" fill="currentColor" font-size="10.5" font-weight="800" text-anchor="middle">Ans</text></svg>
+                <svg width="26" height="16" viewBox="0 0 26 16"><text x="13" y="12" fill="currentColor" font-size="11" font-weight="700" text-anchor="middle">Ans</text></svg>
               </button>
               <button class="ckey ckey-sci" data-key="SIN" style="left:75px;top:204px" aria-label="sin">
-                <svg width="24" height="16" viewBox="0 0 24 16"><text x="12" y="12" fill="currentColor" font-size="11" font-weight="800" text-anchor="middle">sin</text></svg>
+                <svg width="24" height="16" viewBox="0 0 24 16"><text x="12" y="12" fill="currentColor" font-size="11.5" font-weight="700" text-anchor="middle">sin</text></svg>
               </button>
               <button class="ckey ckey-sci" data-key="COS" style="left:125px;top:204px" aria-label="cos">
-                <svg width="24" height="16" viewBox="0 0 24 16"><text x="12" y="12" fill="currentColor" font-size="11" font-weight="800" text-anchor="middle">cos</text></svg>
+                <svg width="24" height="16" viewBox="0 0 24 16"><text x="12" y="12" fill="currentColor" font-size="11.5" font-weight="700" text-anchor="middle">cos</text></svg>
               </button>
               <button class="ckey ckey-sci" data-key="TAN" style="left:175px;top:204px" aria-label="tan">
-                <svg width="24" height="16" viewBox="0 0 24 16"><text x="12" y="12" fill="currentColor" font-size="11" font-weight="800" text-anchor="middle">tan</text></svg>
+                <svg width="24" height="16" viewBox="0 0 24 16"><text x="12" y="12" fill="currentColor" font-size="11.5" font-weight="700" text-anchor="middle">tan</text></svg>
               </button>
               <button class="ckey ckey-sci" data-key="LPAREN" style="left:225px;top:204px" aria-label="Left parenthesis">
-                <svg width="14" height="16" viewBox="0 0 14 16"><text x="7" y="12.5" fill="currentColor" font-size="13" font-weight="800" text-anchor="middle">(</text></svg>
+                <svg width="14" height="16" viewBox="0 0 14 16"><text x="7" y="12.5" fill="currentColor" font-size="13.5" font-weight="700" text-anchor="middle">(</text></svg>
               </button>
               <button class="ckey ckey-sci" data-key="RPAREN" style="left:275px;top:204px" aria-label="Right parenthesis">
-                <svg width="14" height="16" viewBox="0 0 14 16"><text x="7" y="12.5" fill="currentColor" font-size="13" font-weight="800" text-anchor="middle">)</text></svg>
+                <svg width="14" height="16" viewBox="0 0 14 16"><text x="7" y="12.5" fill="currentColor" font-size="13.5" font-weight="700" text-anchor="middle">)</text></svg>
               </button>
             </div>
 
@@ -1408,24 +1419,25 @@
                 <div class="num-cell">
                   <div class="shift-tag">
                     <svg width="42" height="13" viewBox="0 0 42 13">
-                      <polyline points="4,6 4,11 9,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.4" stroke-linecap="round"/>
-                      <text x="23" y="10.5" fill="var(--legend-shift)" font-size="9.5" font-weight="900" text-anchor="middle">INS</text>
+                      <polyline points="4,6 4,11 9,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.3" stroke-linecap="round"/>
+                      <text x="21" y="10.5" fill="var(--legend-shift)" font-size="9.5" font-weight="900" text-anchor="middle">INS</text>
                     </svg>
                   </div>
-                  <button class="ckey ckey-num ckey-del" data-key="DEL" aria-label="Delete">
-                    <svg width="18" height="14" viewBox="0 0 24 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
-                      <path d="M8 4l8 10M16 4l-8 10"/>
+                  <button class="ckey ckey-num" data-key="DEL" aria-label="Delete">
+                    <svg width="26" height="18" viewBox="0 0 26 18">
+                      <path d="M9 2.5H22.5A1.5 1.5 0 0 1 24 4v10a1.5 1.5 0 0 1-1.5 1.5H9L3 9Z" fill="var(--del-tag)"/>
+                      <path d="M13 6l5 6M18 6l-5 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                   </button>
                 </div>
                 <div class="num-cell">
                   <div class="shift-tag">
                     <svg width="42" height="13" viewBox="0 0 42 13">
-                      <polyline points="4,6 4,11 9,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.4" stroke-linecap="round"/>
-                      <text x="23" y="10.5" fill="var(--legend-shift)" font-size="9.5" font-weight="900" text-anchor="middle">OFF</text>
+                      <polyline points="4,6 4,11 9,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.3" stroke-linecap="round"/>
+                      <text x="21" y="10.5" fill="var(--legend-shift)" font-size="9.5" font-weight="900" text-anchor="middle">OFF</text>
                     </svg>
                   </div>
-                  <button class="ckey ckey-num ckey-ac" data-key="AC" style="font-size:13.5px">AC</button>
+                  <button class="ckey ckey-num" data-key="AC" style="font-size:16px">AC</button>
                 </div>
               </div>
 
@@ -1434,8 +1446,8 @@
                 <div class="num-cell">
                   <div class="shift-tag">
                     <svg width="36" height="13" viewBox="0 0 36 13">
-                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.4" stroke-linecap="round"/>
-                      <text x="20" y="10.5" fill="var(--legend-shift)" font-size="10.5" font-weight="900" text-anchor="middle">A</text>
+                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.3" stroke-linecap="round"/>
+                      <text x="16" y="10.5" fill="var(--legend-shift)" font-size="10.5" font-weight="900" text-anchor="middle">A</text>
                     </svg>
                   </div>
                   <button class="ckey ckey-num" data-key="4">4</button>
@@ -1443,8 +1455,8 @@
                 <div class="num-cell">
                   <div class="shift-tag">
                     <svg width="36" height="13" viewBox="0 0 36 13">
-                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.4" stroke-linecap="round"/>
-                      <text x="20" y="10.5" fill="var(--legend-shift)" font-size="10.5" font-weight="900" text-anchor="middle">B</text>
+                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.3" stroke-linecap="round"/>
+                      <text x="16" y="10.5" fill="var(--legend-shift)" font-size="10.5" font-weight="900" text-anchor="middle">B</text>
                     </svg>
                   </div>
                   <button class="ckey ckey-num" data-key="5">5</button>
@@ -1452,29 +1464,17 @@
                 <div class="num-cell">
                   <div class="shift-tag">
                     <svg width="36" height="13" viewBox="0 0 36 13">
-                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.4" stroke-linecap="round"/>
-                      <text x="20" y="10.5" fill="var(--legend-shift)" font-size="10.5" font-weight="900" text-anchor="middle">C</text>
+                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.3" stroke-linecap="round"/>
+                      <text x="16" y="10.5" fill="var(--legend-shift)" font-size="10.5" font-weight="900" text-anchor="middle">C</text>
                     </svg>
                   </div>
                   <button class="ckey ckey-num" data-key="6">6</button>
                 </div>
                 <div class="num-cell">
-                  <div class="shift-tag">
-                    <svg width="42" height="13" viewBox="0 0 42 13">
-                      <polyline points="4,6 4,11 9,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.4" stroke-linecap="round"/>
-                      <text x="23" y="10.5" fill="var(--legend-shift)" font-size="9.5" font-weight="900" text-anchor="middle">QR</text>
-                    </svg>
-                  </div>
-                  <button class="ckey ckey-num" data-key="MUL" style="font-size:18px">×</button>
+                  <button class="ckey ckey-num" data-key="MUL" style="font-size:20px">×</button>
                 </div>
                 <div class="num-cell">
-                  <div class="shift-tag">
-                    <svg width="36" height="13" viewBox="0 0 36 13">
-                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.4" stroke-linecap="round"/>
-                      <text x="20" y="10.5" fill="var(--legend-shift)" font-size="11" font-weight="900" text-anchor="middle">,</text>
-                    </svg>
-                  </div>
-                  <button class="ckey ckey-num" data-key="DIV" style="font-size:18px">÷</button>
+                  <button class="ckey ckey-num" data-key="DIV" style="font-size:20px">÷</button>
                 </div>
               </div>
 
@@ -1483,8 +1483,8 @@
                 <div class="num-cell">
                   <div class="shift-tag">
                     <svg width="36" height="13" viewBox="0 0 36 13">
-                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.4" stroke-linecap="round"/>
-                      <text x="20" y="10.5" fill="var(--legend-shift)" font-size="10.5" font-weight="900" text-anchor="middle">D</text>
+                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.3" stroke-linecap="round"/>
+                      <text x="16" y="10.5" fill="var(--legend-shift)" font-size="10.5" font-weight="900" text-anchor="middle">D</text>
                     </svg>
                   </div>
                   <button class="ckey ckey-num" data-key="1">1</button>
@@ -1492,8 +1492,8 @@
                 <div class="num-cell">
                   <div class="shift-tag">
                     <svg width="36" height="13" viewBox="0 0 36 13">
-                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.4" stroke-linecap="round"/>
-                      <text x="20" y="10.5" fill="var(--legend-shift)" font-size="10.5" font-weight="900" text-anchor="middle">E</text>
+                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.3" stroke-linecap="round"/>
+                      <text x="16" y="10.5" fill="var(--legend-shift)" font-size="10.5" font-weight="900" text-anchor="middle">E</text>
                     </svg>
                   </div>
                   <button class="ckey ckey-num" data-key="2">2</button>
@@ -1501,8 +1501,8 @@
                 <div class="num-cell">
                   <div class="shift-tag">
                     <svg width="36" height="13" viewBox="0 0 36 13">
-                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.4" stroke-linecap="round"/>
-                      <text x="20" y="10.5" fill="var(--legend-shift)" font-size="10.5" font-weight="900" text-anchor="middle">F</text>
+                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.3" stroke-linecap="round"/>
+                      <text x="16" y="10.5" fill="var(--legend-shift)" font-size="10.5" font-weight="900" text-anchor="middle">F</text>
                     </svg>
                   </div>
                   <button class="ckey ckey-num" data-key="3">3</button>
@@ -1510,20 +1510,20 @@
                 <div class="num-cell">
                   <div class="shift-tag">
                     <svg width="42" height="13" viewBox="0 0 42 13">
-                      <polyline points="3,6 3,11 8,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.4" stroke-linecap="round"/>
+                      <polyline points="3,6 3,11 8,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.3" stroke-linecap="round"/>
                       <text x="24" y="10.5" fill="var(--legend-shift)" font-size="9.5" font-weight="900" text-anchor="middle">° ' "</text>
                     </svg>
                   </div>
-                  <button class="ckey ckey-num" data-key="ADD" style="font-size:18px">+</button>
+                  <button class="ckey ckey-num" data-key="ADD" style="font-size:20px">+</button>
                 </div>
                 <div class="num-cell">
                   <div class="shift-tag">
                     <svg width="42" height="13" viewBox="0 0 42 13">
-                      <polyline points="3,6 3,11 8,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.4" stroke-linecap="round"/>
-                      <text x="24" y="10.5" fill="var(--legend-shift)" font-size="9.5" font-weight="900" text-anchor="middle">(−)</text>
+                      <polyline points="3,6 3,11 8,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.3" stroke-linecap="round"/>
+                      <text x="21" y="10.5" fill="var(--legend-shift)" font-size="9.5" font-weight="900" text-anchor="middle">(−)</text>
                     </svg>
                   </div>
-                  <button class="ckey ckey-num" data-key="SUB" style="font-size:18px">−</button>
+                  <button class="ckey ckey-num" data-key="SUB" style="font-size:20px">−</button>
                 </div>
               </div>
 
@@ -1532,8 +1532,8 @@
                 <div class="num-cell">
                   <div class="shift-tag">
                     <svg width="36" height="13" viewBox="0 0 36 13">
-                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.4" stroke-linecap="round"/>
-                      <text x="20" y="10.5" fill="var(--legend-shift)" font-size="10.5" font-style="italic" font-weight="900" text-anchor="middle">x</text>
+                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.3" stroke-linecap="round"/>
+                      <text x="16" y="10.5" fill="var(--legend-shift)" font-size="10.5" font-style="italic" font-weight="900" text-anchor="middle">x</text>
                     </svg>
                   </div>
                   <button class="ckey ckey-num" data-key="0">0</button>
@@ -1541,8 +1541,8 @@
                 <div class="num-cell">
                   <div class="shift-tag">
                     <svg width="36" height="13" viewBox="0 0 36 13">
-                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.4" stroke-linecap="round"/>
-                      <text x="20" y="10.5" fill="var(--legend-shift)" font-size="10.5" font-style="italic" font-weight="900" text-anchor="middle">y</text>
+                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.3" stroke-linecap="round"/>
+                      <text x="16" y="10.5" fill="var(--legend-shift)" font-size="10.5" font-style="italic" font-weight="900" text-anchor="middle">y</text>
                     </svg>
                   </div>
                   <button class="ckey ckey-num" data-key="DOT">.</button>
@@ -1550,42 +1550,36 @@
                 <div class="num-cell">
                   <div class="shift-tag">
                     <svg width="36" height="13" viewBox="0 0 36 13">
-                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.4" stroke-linecap="round"/>
-                      <text x="20" y="10.5" fill="var(--legend-shift)" font-size="10.5" font-style="italic" font-weight="900" text-anchor="middle">z</text>
+                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.3" stroke-linecap="round"/>
+                      <text x="16" y="10.5" fill="var(--legend-shift)" font-size="10.5" font-style="italic" font-weight="900" text-anchor="middle">z</text>
                     </svg>
                   </div>
                   <button class="ckey ckey-num" data-key="EXP10" aria-label="times 10 power">
                     <svg width="38" height="20" viewBox="0 0 38 20">
-                      <text x="15" y="14.5" fill="currentColor" font-size="11.5" font-weight="800" text-anchor="middle">×10</text>
-                      <rect x="27" y="4" width="5" height="5" fill="none" stroke="currentColor" stroke-width="1.2"/>
+                      <text x="15.5" y="14.5" fill="currentColor" font-size="12.5" font-weight="700" text-anchor="middle">×10</text>
+                      <rect x="28" y="4" width="4.8" height="4.8" fill="currentColor"/>
                     </svg>
                   </button>
                 </div>
                 <div class="num-cell">
-                  <div class="shift-tag">
-                    <svg width="42" height="13" viewBox="0 0 42 13">
-                      <polyline points="4,6 4,11 9,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.4" stroke-linecap="round"/>
-                      <text x="24" y="10.5" fill="var(--legend-shift)" font-size="9" font-weight="900" text-anchor="middle">ENG</text>
-                    </svg>
-                  </div>
                   <button class="ckey ckey-num" data-key="FORMAT" aria-label="FORMAT">
-                    <svg width="32" height="24" viewBox="0 0 32 24" fill="none" stroke="currentColor">
-                      <path d="M8 7c4-3 12-3 16 0" stroke-width="1.5" stroke-linecap="round"/>
-                      <polyline points="22,4.5 24.5,7.2 21,7.8" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                      <text x="16" y="14.2" stroke="none" fill="currentColor" font-size="6.4" font-weight="900" text-anchor="middle">FORMAT</text>
-                      <path d="M24 17c-4 3-12 3-16 0" stroke-width="1.5" stroke-linecap="round"/>
-                      <polyline points="10,19.5 7.5,16.8 11,16.2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="34" height="26" viewBox="0 0 34 26" fill="none" stroke="currentColor">
+                      <path d="M9 7.5c4.5-3 11.5-3 16 0" stroke-width="1.4" stroke-linecap="round"/>
+                      <polyline points="23,5 25.5,7.7 22,8.2" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                      <text x="17" y="15.2" stroke="none" fill="currentColor" font-size="7" font-weight="800" text-anchor="middle">FORMAT</text>
+                      <path d="M25 18.5c-4.5 3-11.5 3-16 0" stroke-width="1.4" stroke-linecap="round"/>
+                      <polyline points="11,21 8.5,18.3 12,17.8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                   </button>
                 </div>
                 <div class="num-cell">
                   <div class="shift-tag">
                     <svg width="36" height="13" viewBox="0 0 36 13">
-                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.4" stroke-linecap="round"/>
-                      <text x="20" y="10.5" fill="var(--legend-shift)" font-size="11.5" font-weight="900" text-anchor="middle">≈</text>
+                      <polyline points="5,6 5,11 10,11" fill="none" stroke="var(--legend-shift)" stroke-width="1.3" stroke-linecap="round"/>
+                      <text x="16" y="10.5" fill="var(--legend-shift)" font-size="11.5" font-weight="900" text-anchor="middle">≈</text>
                     </svg>
                   </div>
-                  <button class="ckey ckey-num ckey-exe" data-key="EXE" style="font-size:12.5px">EXE</button>
+                  <button class="ckey ckey-num ckey-exe" data-key="EXE" style="font-size:15.5px">EXE</button>
                 </div>
               </div>
             </div>
@@ -2615,7 +2609,7 @@
     },
     {
       title: '2. สร้าง QR Code ดูกราฟบนมือถือ',
-      desc: 'พิมพ์สมการ/ฟังก์ชัน แล้วกด SHIFT + × (หรือ SHIFT + x) เพื่อสร้าง QR Code',
+      desc: 'พิมพ์สมการ/ฟังก์ชัน แล้วกด SHIFT + x เพื่อสร้าง QR Code (เหมือนเครื่องจริง)',
       steps: [
         { key: 'AC', hint: 'กด AC เพื่อเคลียร์หน้าจอ' },
         { key: '2', hint: 'กด 2' },
@@ -2623,7 +2617,7 @@
         { key: '3', hint: 'กด 3' },
         { key: 'EXE', hint: 'กด EXE เพื่อคำนวณ' },
         { key: 'SHIFT', hint: 'กด SHIFT (ปุ่มสีม่วง)' },
-        { key: 'MUL', hint: 'กด × (QR) แล้วแตะที่ QR Code บนจอเพื่อดูกราฟ!' }
+        { key: 'XVAR', hint: 'กด x (QR) แล้วแตะที่ QR Code บนจอเพื่อดูกราฟ!' }
       ]
     },
     {
@@ -3242,27 +3236,24 @@
         insertNodeAtCursor(ExprTree.ch('÷'));
       }
     } else if (key === 'LPAREN') {
-      if (sh) insertTemplate(ExprTree.fn('ln'));
+      if (sh) insertNodeAtCursor(ExprTree.ch('='));
       else insertNodeAtCursor(ExprTree.ch('('));
     } else if (key === 'RPAREN') {
-      if (sh) insertTemplate(ExprTree.sup(ExprTree.slot([ExprTree.ch('e')]), ExprTree.slot()), 1);
+      if (sh) insertNodeAtCursor(ExprTree.ch(','));
       else insertNodeAtCursor(ExprTree.ch(')'));
     } else if (key === 'FRAC') {
       insertTemplate(ExprTree.frac());
     } else if (key === 'SQRT') {
-      if (sh) insertTemplate(ExprTree.nroot(ExprTree.slot([ExprTree.ch('3')]), ExprTree.slot()), 1);
-      else insertTemplate(ExprTree.sqrt());
-    } else if (key === 'SQ') {
-      const prev = cursorIdx > 0 ? cursorSlot.items.splice(cursorIdx - 1, 1)[0] : null;
-      if (prev) cursorIdx--;
-      const baseSlot = prev ? ExprTree.slot([prev]) : ExprTree.slot();
-      const expSlot = ExprTree.slot([ExprTree.ch(sh ? '−1' : '2')]);
-      const node = ExprTree.sup(baseSlot, expSlot);
-      cursorSlot.items.splice(cursorIdx, 0, node);
-      if (prev) { cursorIdx++; } else { cursorSlot = node.slots[0]; cursorIdx = 0; }
-    } else if (key === 'POW') {
       if (sh) insertTemplate(ExprTree.nroot());
-      else {
+      else insertTemplate(ExprTree.sqrt());
+    } else if (key === 'POW') {
+      if (sh) {
+        const prev = cursorIdx > 0 ? cursorSlot.items.splice(cursorIdx - 1, 1)[0] : null;
+        if (prev) cursorIdx--;
+        const node = ExprTree.sup(prev ? ExprTree.slot([prev]) : ExprTree.slot(), ExprTree.slot([ExprTree.ch('−1')]));
+        cursorSlot.items.splice(cursorIdx, 0, node);
+        if (prev) cursorIdx++; else { cursorSlot = node.slots[0]; cursorIdx = 0; }
+      } else {
         const prev = cursorIdx > 0 ? cursorSlot.items.splice(cursorIdx - 1, 1)[0] : null;
         if (prev) cursorIdx--;
         const node = ExprTree.sup(prev ? ExprTree.slot([prev]) : ExprTree.slot(), ExprTree.slot());
@@ -3270,8 +3261,17 @@
         cursorSlot = node.slots[prev ? 1 : 0];
         cursorIdx = 0;
       }
+    } else if (key === 'SQ') {
+      if (sh) insertTemplate(ExprTree.fn('log'));
+      else {
+        const prev = cursorIdx > 0 ? cursorSlot.items.splice(cursorIdx - 1, 1)[0] : null;
+        if (prev) cursorIdx--;
+        const node = ExprTree.sup(prev ? ExprTree.slot([prev]) : ExprTree.slot(), ExprTree.slot([ExprTree.ch('2')]));
+        cursorSlot.items.splice(cursorIdx, 0, node);
+        if (prev) cursorIdx++; else { cursorSlot = node.slots[0]; cursorIdx = 0; }
+      }
     } else if (key === 'LOG') {
-      if (sh) insertTemplate(ExprTree.sup(ExprTree.slot([ExprTree.ch('1'), ExprTree.ch('0')]), ExprTree.slot()), 1);
+      if (sh) insertTemplate(ExprTree.fn('ln'));
       else insertTemplate(ExprTree.logbase());
     } else if (key === 'SIN') {
       insertTemplate(ExprTree.fn(sh ? 'sin⁻¹' : 'sin'));
@@ -3929,20 +3929,20 @@
      14. RENDERING LCD + CHASSIS + COMPANION STUDIO
      ============================================================ */
   function getAppIconSVG(type) {
-    const s = 'stroke="currentColor" fill="none" stroke-width="1.7"';
-    if (type === 'calc') return `<svg width="20" height="18" viewBox="0 0 24 20" ${s}><rect x="4" y="2" width="16" height="16" rx="2"/><path d="M8 7h8M8 12h3M13 12h3M8 15h3"/></svg>`;
-    if (type === 'stats') return `<svg width="20" height="18" viewBox="0 0 24 20" ${s}><path d="M4 17h16M6 17V9M11 17V5M16 17v-7"/></svg>`;
-    if (type === 'dist') return `<svg width="20" height="18" viewBox="0 0 24 20" ${s}><path d="M3 16c4 0 5-12 9-12s5 12 9 12"/></svg>`;
-    if (type === 'sheet') return `<svg width="20" height="18" viewBox="0 0 24 20" ${s}><rect x="3" y="3" width="18" height="14"/><path d="M3 8h18M9 3v14M15 3v14"/></svg>`;
-    if (type === 'table') return `<svg width="20" height="18" viewBox="0 0 24 20" ${s}><rect x="4" y="3" width="16" height="14"/><path d="M12 3v14M4 8h16"/></svg>`;
-    if (type === 'eq') return `<svg width="20" height="18" viewBox="0 0 24 20"><text x="12" y="14" fill="currentColor" font-size="11" font-weight="800" text-anchor="middle">x²=0</text></svg>`;
-    if (type === 'ineq') return `<svg width="20" height="18" viewBox="0 0 24 20"><text x="12" y="14" fill="currentColor" font-size="11" font-weight="800" text-anchor="middle">x²&gt;0</text></svg>`;
-    if (type === 'cmplx') return `<svg width="20" height="18" viewBox="0 0 24 20"><text x="12" y="14" fill="currentColor" font-size="12" font-style="italic" font-weight="800" text-anchor="middle">a+bi</text></svg>`;
-    if (type === 'basen') return `<svg width="20" height="18" viewBox="0 0 24 20"><text x="12" y="14" fill="currentColor" font-size="10.5" font-weight="800" text-anchor="middle">1010</text></svg>`;
-    if (type === 'mat') return `<svg width="20" height="18" viewBox="0 0 24 20" ${s}><path d="M7 3H4v14h3M17 3h3v14h-3"/><circle cx="9" cy="8" r="1" fill="currentColor"/><circle cx="15" cy="8" r="1" fill="currentColor"/><circle cx="9" cy="13" r="1" fill="currentColor"/><circle cx="15" cy="13" r="1" fill="currentColor"/></svg>`;
-    if (type === 'vct') return `<svg width="20" height="18" viewBox="0 0 24 20" ${s}><path d="M5 15L18 5m0 0h-5m5 0v5"/></svg>`;
-    if (type === 'ratio') return `<svg width="20" height="18" viewBox="0 0 24 20"><text x="12" y="14" fill="currentColor" font-size="11" font-weight="800" text-anchor="middle">A:B</text></svg>`;
-    return `<svg width="20" height="18" viewBox="0 0 24 20" ${s}><rect x="5" y="4" width="14" height="12" rx="2"/><circle cx="9" cy="8" r="1" fill="currentColor"/><circle cx="15" cy="12" r="1" fill="currentColor"/></svg>`;
+    const s = 'stroke="currentColor" fill="none" stroke-width="1.6"';
+    if (type === 'calc') return `<svg width="24" height="18" viewBox="0 0 28 20" ${s}><rect x="4" y="2" width="20" height="16" rx="1.5"/><path d="M8 7h12M8 12h4M16 12h4M8 15h4"/></svg>`;
+    if (type === 'stats') return `<svg width="24" height="18" viewBox="0 0 28 20" ${s}><path d="M4 17h20M7 17V9M13 17V4M19 17v-7"/></svg>`;
+    if (type === 'dist') return `<svg width="24" height="18" viewBox="0 0 28 20" ${s}><path d="M3 16c5 0 6-12 11-12s6 12 11 12"/></svg>`;
+    if (type === 'sheet') return `<svg width="26" height="18" viewBox="0 0 30 20" ${s}><rect x="3" y="2" width="24" height="15"/><path d="M3 7h24M11 2v15M18 2v15M3 12h24"/></svg>`;
+    if (type === 'table') return `<svg width="26" height="18" viewBox="0 0 30 20" ${s}><rect x="4" y="3" width="10" height="13"/><rect x="16" y="3" width="10" height="13"/><path d="M4 8h10M16 8h10"/></svg>`;
+    if (type === 'eq') return `<svg width="32" height="18" viewBox="0 0 36 20"><text x="18" y="14" fill="currentColor" font-size="11.5" font-weight="900" text-anchor="middle">XY=0</text></svg>`;
+    if (type === 'ineq') return `<svg width="32" height="18" viewBox="0 0 36 20"><text x="18" y="14" fill="currentColor" font-size="11.5" font-weight="900" text-anchor="middle">XY&gt;0</text></svg>`;
+    if (type === 'cmplx') return `<svg width="28" height="18" viewBox="0 0 32 20"><rect x="3" y="3" width="11" height="13" fill="currentColor"/><text x="8.5" y="13" fill="#DCECE4" font-size="10.5" font-style="italic" font-weight="900" text-anchor="middle">i</text><rect x="17" y="3" width="12" height="13" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M26 7l-6 6h7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>`;
+    if (type === 'basen') return `<svg width="34" height="18" viewBox="0 0 38 20"><text x="19" y="14" fill="currentColor" font-size="10" font-weight="900" text-anchor="middle">2 8 10 16</text></svg>`;
+    if (type === 'mat') return `<svg width="24" height="18" viewBox="0 0 28 20" ${s}><path d="M8 3H5v14h3M20 3h3v14h-3"/><circle cx="11" cy="8" r="1.2" fill="currentColor"/><circle cx="17" cy="8" r="1.2" fill="currentColor"/><circle cx="11" cy="13" r="1.2" fill="currentColor"/><circle cx="17" cy="13" r="1.2" fill="currentColor"/></svg>`;
+    if (type === 'vct') return `<svg width="24" height="18" viewBox="0 0 28 20" ${s}><path d="M5 15L21 5m0 0h-6m6 0v5"/></svg>`;
+    if (type === 'ratio') return `<svg width="28" height="18" viewBox="0 0 32 20"><text x="16" y="14" fill="currentColor" font-size="11.5" font-weight="900" text-anchor="middle">A:B</text></svg>`;
+    return `<svg width="24" height="18" viewBox="0 0 28 20" ${s}><rect x="6" y="3" width="16" height="14" rx="2"/><circle cx="11" cy="8" r="1.3" fill="currentColor"/><circle cx="17" cy="12" r="1.3" fill="currentColor"/></svg>`;
   }
 
   function renderLCD() {
